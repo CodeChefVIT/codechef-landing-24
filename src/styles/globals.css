@@ -75,12 +75,18 @@
 }
 
 .card {
-  background: url("./../components/images/bCard.png");
+  /* background: url("./../components/images/bCard.png"); */
   height: 340px;
   background-repeat: no-repeat;
   width: 250px;
   background-size: 250px 350px;
 }
+
+/* .card:hover{
+  transform: rotateY(180deg);
+  background: url("./../components/images/revCard.png");
+  background-size: 250px 350px;
+} */
 
 .h-img {
   width: 74.5% !important;
