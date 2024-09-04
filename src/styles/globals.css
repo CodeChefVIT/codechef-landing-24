@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Enigma";
+  src: url("/Enigma.otf") format("opentype");
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -69,7 +74,6 @@
   }
 }
 
-
 .card {
   background: url("./../components/images/bCard.png");
   height: 340px;
@@ -84,3 +88,4 @@
   bottom: 22.4px;
   left: 26px;
 }
+
