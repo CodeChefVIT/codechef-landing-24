@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.b-p {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.b-sm {
+    font-size: 50px;
+}
+
+.b-lr {
+    font-size: 150px;
+}
+
+.h-text {
+    padding-top: 50px;
+}
+
+.card {
+    background: url("../images/bCard.png");
+    height: 340px;
+    background-repeat: no-repeat;
+    width: 250px;
+    background-size: 250px 350px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    margin-top: 50px;
+    column-gap: 50px;
+    row-gap: 60px;
+    max-width: 75%;
+}
+
+.h-img {
+    width: 74.5% !important;
+    position: relative;
+    bottom: 22.4px;
+    left: 26px;
+}
+
+.names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.names p {
+    color: black;
+}
+
+.name {
+    font-size: 26px;
+}
+
+.role {
+    font-size: 13px;
+}

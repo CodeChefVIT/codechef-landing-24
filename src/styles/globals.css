@@ -63,7 +63,24 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+
+.card {
+  background: url("./../components/images/bCard.png");
+  height: 340px;
+  background-repeat: no-repeat;
+  width: 250px;
+  background-size: 250px 350px;
+}
+
+.h-img {
+  width: 74.5% !important;
+  position: relative;
+  bottom: 22.4px;
+  left: 26px;
 }
