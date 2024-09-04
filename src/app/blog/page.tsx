@@ -44,29 +44,29 @@ const dummyData = [
 
 export default function Blog() {
   return (
-    <div className="bg-black text-white h-full font-enigma z-0 w- overflow-hidden">
-      <h1 className="font-bold pt-8 text-5xl text-center mb-8 font-enigma">
-        BLOGS
-      </h1>
-      <Image src={upper} className=' absolute z-0 -top-[50%] -left-[50%] h-[1148px] w-auto ' height={1000} width={1000} alt='upper-element'/>
-      <Image src={lower} className='absolute z-0 -bottom-[90%] -right-[30%] h-[1148px] w-auto' height={1000} width={1000}alt='lower-element'/>
-      <div className="svg"></div>
+      <div className="bg-black text-white h-full font-enigma z-0 w- overflow-hidden">
+        <h1 className="font-bold pt-8 text-5xl text-center mb-8 font-enigma">
+          BLOGS
+        </h1>
+        <Image src={upper} className=' absolute z-0 -top-[50%] -left-[50%] h-[1148px] w-auto ' height={1000} width={1000} alt='upper-element'/>
+        <Image src={lower} className='absolute z-0 -bottom-[90%] -right-[30%] h-[1148px] w-auto' height={1000} width={1000}alt='lower-element'/>
+        <div className="svg"></div>
 
-      <div className="container mx-auto z-10">
-        <div className="  text-black z-10">
-          <div className=" grid grid-cols-1 gap-8 p-5 rounded-lg">
-            {dummyData.map((post) => (
-              <BlogCard
-                key={post.slug}
-                title={post.title}
-                description={post.description}
-                image={post.image}
-                slug={post.slug}
-              />
-            ))}
+        <div className="container mx-auto z-10">
+          <div className="  text-black z-10">
+            <div className=" grid grid-cols-1 gap-8 p-5 rounded-lg">
+              {dummyData.map((post) => (
+                <BlogCard
+                  key={post.slug}
+                  title={post.title}
+                  description={post.description}
+                  image={post.image}
+                  slug={post.slug}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
   );
 }
