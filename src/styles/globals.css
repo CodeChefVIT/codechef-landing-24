@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("../../public/assets/navbar/css/component1.css");
+@import url("../../public/assets/navbar/css/demo.css");
+@import url("../../public/assets/navbar/css/normalize.css");
+
 @font-face {
   font-family: "Enigma";
   src: url("/Enigma.otf") format("opentype");
@@ -89,7 +93,6 @@
   background-size: 250px 350px;
 }
 
-
 .h-img {
   width: 74.5% !important;
   position: relative;
@@ -97,9 +100,8 @@
   left: 26px;
 }
 
-
 .gradient-text {
-  background: linear-gradient(to right, #FF2d00, #ff3b00, #f1f1f1);
+  background: linear-gradient(to right, #ff2d00, #ff3b00, #f1f1f1);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -113,7 +115,6 @@
   --slide-size: 100%;
 }
 .embla__viewport {
-
 }
 .embla__container {
   display: flex;
@@ -138,7 +139,7 @@
   margin: auto;
 }
 .embla__button {
-  -webkit-tap-highlight-color: #F1F1F1;
+  -webkit-tap-highlight-color: #f1f1f1;
   -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
@@ -159,7 +160,7 @@
   justify-content: center;
 }
 .embla__button:disabled {
-  color: #F1F1F1;
+  color: #f1f1f1;
 }
 .embla__button__svg {
   width: 30%;
@@ -172,7 +173,7 @@
   max-width: fit-content;
 }
 .embla__dot {
-  -webkit-tap-highlight-color: #F1F1F1;
+  -webkit-tap-highlight-color: #f1f1f1;
   -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
@@ -191,42 +192,42 @@
   border-radius: 50%;
 }
 .embla__dot:after {
-  box-shadow: inset 0 0 0 0.1rem #F1F1F1;
+  box-shadow: inset 0 0 0 0.1rem #f1f1f1;
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
-  content: '';
+  content: "";
 }
 .embla__dot--selected:after {
   box-shadow: inset 0 0 0 0.1rem #ff3b00;
 }
 
-.polygon{
+.polygon {
   width: 600px;
   height: 500px;
   position: relative;
   clip-path: polygon(13% 0, 100% 0, 100% 91%, 87% 100%, 0 100%, 0 9%);
-  background: #FF3B00;
+  background: #ff3b00;
 }
 
-.overlay{
+.overlay {
   width: 600px;
   height: 500px;
   position: absolute;
-  top : -15px;
+  top: -15px;
   left: -15px;
   clip-path: polygon(13% 0, 100% 0, 100% 91%, 87% 100%, 0 100%, 0 9%);
   background: #252525;
 }
 
 @media (max-width: 600px) {
-  .polygon{
+  .polygon {
     width: 250px;
     height: 200px;
   }
-  .overlay{
+  .overlay {
     width: 250px;
     height: 200px;
     top: -10px;
@@ -234,6 +235,8 @@
   }
 }
 
-.smh-object{
+.smh-object {
   overflow-clip-margin: 0px;
 }
+
+/* ************************ */
