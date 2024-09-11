@@ -13,6 +13,7 @@
     "@babel/preset-react": "^7.24.7",
     "@babel/preset-typescript": "^7.24.7",
     "@radix-ui/react-slot": "^1.1.0",
+    "@rive-app/react-canvas": "^4.13.9",
     "@studio-freight/lenis": "^1.0.42",
     "@studio-freight/react-lenis": "^0.0.47",
     "class-variance-authority": "^0.7.0",
