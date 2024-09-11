@@ -5,8 +5,7 @@ export default function Home() {
   return (
     <main>
       <Events />
-      <Rive
-      src="/websiteloader.riv"></Rive>
+     
     </main>
   );
 }
