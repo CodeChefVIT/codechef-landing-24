@@ -1,11 +1,10 @@
 "use client";
-
-import ReactLenis from "@studio-freight/react-lenis";
-import { Inter } from "next/font/google";
-import React, { useEffect, ReactNode } from "react";
-import { usePathname } from "next/navigation";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import ReactLenis from "@studio-freight/react-lenis";
+import { Inter } from "next/font/google";
+import Script from "next/script";
+import React from "react";
 import "../styles/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });

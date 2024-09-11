@@ -1,8 +1,5 @@
 "use client";
-import lower from '@/assets/images/lower.svg';
-import upper from '@/assets/images/upper.svg';
 import BlogCard from '@/components/BlogCard';
-import Image from "next/image";
 import { useState } from 'react';
 import "../../styles/enigma-font.css";
 
@@ -176,22 +173,8 @@ export default function Blog() {
   );
   const totalPages = Math.ceil(dummyData.length / limit);
   return (
-    <div className="bg-black text-white h-full font-enigma z-0 w-full overflow-hidden">
-      <h1 className="text-white z-20 font-semibold font-enigma text-5xl text-center md:text-5xl lg:text-[120x] pb-10 pt-5"> BLOGS</h1>
-      <Image
-        src={upper}
-        className='absolute z-0 -top-[50%] -left-[50%] h-[1148px] w-auto'
-        height={1000}
-        width={1000}
-        alt='upper-element'
-      />
-      <Image
-        src={lower}
-        className='absolute z-0 -bottom-[90%] -right-[30%] h-[1148px] w-auto'
-        height={1000}
-        width={1000}
-        alt='lower-element'
-      />
+    <div className="bg-black text-white font-enigma z-0 overflow-hidden">
+      <h1 className="text-white font-semibold font-enigma text-4xl text-center md:text-5xl lg:text-7xl pb-10 pt-5"> BLOGS</h1>
       <div className="text-black z-10">
         <div className="grid gap-8 p-5 rounded-lg">
           {paginatedBlogs.map((post, index) => (

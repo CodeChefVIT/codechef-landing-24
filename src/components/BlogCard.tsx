@@ -23,7 +23,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ title, description, image, link }) 
             alt={title}
             width={200}
             height={200}
-            className="p-2 lg:w-400 lg:h-400 sm:w-200 sm:h-200"
+            className="p-2 justify-center lg:w-400 lg:h-400 sm:w-200 sm:h-200"
           />
           <div className="p-3 flex flex-col sm:flex-col">
             <h2 className="py-2 font-bold">{title}</h2>
