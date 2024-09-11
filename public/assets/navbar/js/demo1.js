@@ -1,5 +1,5 @@
 (function () {
-  // Get the elements by ID
+ 
   var button = document.getElementById("cn-button");
   var wrapper = document.getElementById("cn-wrapper");
   var overlay = document.getElementById("cn-overlay");
