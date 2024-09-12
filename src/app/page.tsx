@@ -1,11 +1,16 @@
-'use client'
+import Footer from "@/components/Footer";
 import Events from "@/components/sections/Events";
-import Rive from "@rive-app/react-canvas";
-export default function Home() {
+import ClientComponent from "@/components/ClientComponent";
+
+const Home: React.FC = () => {
   return (
     <main>
-      <Events />
-     
+      <ClientComponent>
+        <Events />
+        <Footer />
+      </ClientComponent>
     </main>
   );
-}
+};
+
+export default Home;

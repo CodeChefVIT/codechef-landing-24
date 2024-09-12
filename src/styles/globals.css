@@ -240,3 +240,19 @@
 }
 
 /* ************************ */
+
+.line {
+  position: relative;
+  height: 100%;
+  width: 1px;
+  background-color: white;
+}
+
+.circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
+

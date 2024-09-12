@@ -1,3 +1,4 @@
+// RootLayout.js
 "use client";
 
 import Footer from "@/components/Footer";
@@ -5,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import ReactLenis from "@studio-freight/react-lenis";
 import { Inter } from "next/font/google";
 import Script from "next/script";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import "../styles/globals.css";
 
@@ -23,8 +24,19 @@ export default function RootLayout({
     smooth: true,
   };
 
-  const pathname = usePathname(); 
-  const isLoaderPage = pathname === "/loader"; 
+  const [isLoaderActive, setIsLoaderActive] = useState(true); // State to track loader
+
+  useEffect(() => {
+    // Simulate loader active state for 15 seconds
+    const timer = setTimeout(() => {
+      setIsLoaderActive(false);
+    }, 15000); // 15 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  const pathname = usePathname();
+
   return (
     <ReactLenis root options={lenisOptions}>
       <html lang="en">
@@ -38,9 +50,9 @@ export default function RootLayout({
         </head>
         <body className={`${inter.className} overflow-x-hidden w-screen`}>
           {children}
-          
-          {!isLoaderPage && <Footer />}
-          {!isLoaderPage && <Navbar />}
+
+          {!isLoaderActive && <Footer />}
+          {!isLoaderActive && <Navbar />}
         </body>
       </html>
     </ReactLenis>
