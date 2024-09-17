@@ -1,4 +1,5 @@
-@import url(http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
 
 * {
   -moz-box-sizing: border-box;
@@ -74,26 +75,29 @@ body {
 .cn-button {
   border: none;
   background: none;
-  color: #f06060;
+  color: white;
   text-align: center;
   font-size: 1.8em;
   padding-bottom: 1em;
-  height: 3.5em;
-  width: 3.5em;
-  background-color: #fff;
+  height: 4em;
+  width: 4em;
+  background-color: black;
   position: fixed;
   left: 50%;
-  margin-left: -1.75em;
-  bottom: -1.75em;
+  margin-left: -2em;
+  bottom: -2em;
   border-radius: 50%;
   cursor: pointer;
   z-index: 11;
+  border: 10px solid rgba(255, 255, 255, 0.2); /* Transparent border */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Floating shadow effect */
 }
+
 
 .cn-button:hover,
 .cn-button:active,
 .cn-button:focus {
-  color: #aa1010;
+  color: #FF3B00;
 }
 
 .csstransforms .cn-wrapper li {
@@ -110,6 +114,7 @@ body {
   top: 50%;
   margin-top: -1.3em;
   margin-left: -10em;
+  margin-bottom: 1.5em;
   -webkit-transition: border 0.3s ease;
   -moz-transition: border 0.3s ease;
   transition: border 0.3s ease;
@@ -136,22 +141,22 @@ body {
   -webkit-transition: opacity 0.3s, color 0.3s;
   -moz-transition: opacity 0.3s, color 0.3s;
   transition: opacity 0.3s, color 0.3s;
+  border: 1px solid #FFF;
 }
 
 .csstransforms .cn-wrapper li a span {
   font-size: 1.1em;
   opacity: 0.7;
+
 }
 
-/* for a central angle x, the list items must be skewed by 90-x degrees
-in our case x=40deg so skew angle is 50deg
-items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 
 .csstransforms .cn-wrapper li:first-child {
   -webkit-transform: rotate(-10deg) skew(50deg);
   -ms-transform: rotate(-10deg) skew(50deg);
   -moz-transform: rotate(-10deg) skew(50deg);
   transform: rotate(-10deg) skew(50deg);
+  border: 1px solid #FFF;
 }
 
 .csstransforms .cn-wrapper li:nth-child(2) {
@@ -159,6 +164,7 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
   -ms-transform: rotate(30deg) skew(50deg);
   -moz-transform: rotate(30deg) skew(50deg);
   transform: rotate(30deg) skew(50deg);
+  border: 1px solid #FFF;
 }
 
 .csstransforms .cn-wrapper li:nth-child(3) {
@@ -166,6 +172,7 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
   -ms-transform: rotate(70deg) skew(50deg);
   -moz-transform: rotate(70deg) skew(50deg);
   transform: rotate(70deg) skew(50deg);
+  border: 1px solid #FFF;
 }
 
 .csstransforms .cn-wrapper li:nth-child(4) {
@@ -173,6 +180,7 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
   -ms-transform: rotate(110deg) skew(50deg);
   -moz-transform: rotate(110deg) skew(50deg);
   transform: rotate(110deg) skew(50deg);
+  border: 1px solid #FFF;
 }
 
 .csstransforms .cn-wrapper li:nth-child(5) {
@@ -180,16 +188,17 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
   -ms-transform: rotate(150deg) skew(50deg);
   -moz-transform: rotate(150deg) skew(50deg);
   transform: rotate(150deg) skew(50deg);
+  border: 1px solid #FFF;
 }
 
 .csstransforms .cn-wrapper li:nth-child(odd) a {
-  background-color: #a11313;
-  background-color: hsla(0, 88%, 63%, 1);
+  /* background-color: #a11313; */
+  background-color: #272626;
 }
 
 .csstransforms .cn-wrapper li:nth-child(even) a {
-  background-color: #a61414;
-  background-color: hsla(0, 88%, 65%, 1);
+  /* background-color: #a61414; */
+  background-color: #272626;
 }
 
 /* active style */
@@ -203,7 +212,7 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 .csstransforms .cn-wrapper li:not(.active) a:active,
 .csstransforms .cn-wrapper li:not(.active) a:focus {
   background-color: #b31515;
-  background-color: hsla(0, 88%, 70%, 1);
+  background-color: #FF3B00;
 }
 .csstransforms .cn-wrapper li:not(.active) a:focus {
   position: fixed;

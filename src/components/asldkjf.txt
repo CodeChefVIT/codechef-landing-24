@@ -1,0 +1,49 @@
+<Image src="/path/to/static-image.png" alt="test" width={24} height={24} />
+
+import React from "react";
+import Image from "next/image";
+import { nav } from "@/lib/navicons";
+
+const Navbar = () => {
+  return (
+    <div className="container">
+      <div className="component">
+        <button className="cn-button" id="cn-button">
+          +
+        </button>
+        <div className="cn-wrapper" id="cn-wrapper">
+          <ul>
+            <li>
+              <a href="#">
+                <Image src={nav.message} alt="message" width={24} height={24} className="navbar-icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <Image src={nav.grid} alt="grid" width={24} height={24} className="navbar-icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <Image src={nav.home} alt="home" width={24} height={24} className="navbar-icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <Image src={nav.list} alt="list" width={24} height={24} className="navbar-icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <Image src={nav.user} alt="user" width={24} height={24} className="navbar-icon" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="cn-overlay" className="cn-overlay"></div>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
