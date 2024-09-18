@@ -41,8 +41,7 @@ const Component1 = () => {
 
   return (
     <div className="bg-black h-full w-full overflow-x-hidden">
-      {/* Header Section */}
-      <div className="relative h-3/4 w-5/6 lg:ml-28 xs:ml-8 laptop:ml-24 surface:ml-16">
+      <div className="relative h-3/4 w-5/6 lg:ml-28 xs:ml-8 laptop:ml-24 surface:ml-16 2xl:ml-[210px]">
         <Image
           src={headImage}
           alt="Header Image"
@@ -55,8 +54,6 @@ const Component1 = () => {
           <h1 className="text-red-600 xs:text-6xl lg:text-8xl font-bold">Events</h1>
         </div>
       </div>
-
-      {/* SVG Path Section */}
       <div className="relative">
         <svg
           className="absolute left-1/2 transform -translate-x-1/2 w-full h-[2300px] z-0"

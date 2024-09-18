@@ -32,7 +32,7 @@ export default function RootLayout({
           />
           <Script src="/assets/navbar/js/polyfills.js" strategy="lazyOnload" />
         </head>
-        <body className={`${inter.className} overflow-x-hidden w-screen`}>
+        <body className={`${inter.className} overflow-x-hidden w-screen  bg-black `}>
           {children}
           <Footer />
           <Navbar />
