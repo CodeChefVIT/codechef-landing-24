@@ -84,7 +84,7 @@ const Ripple: React.FC<RippleCursorProps> = ({
   }, [duration]);
 
   return (
-    <div className='fixed top-0 left-0 w-screen h-screen pointer-events-none overflow-hidden z-[9999]'>
+    <div className='fixed top-0 left-0 w-screen h-screen pointer-events-none overflow-hidden z-[0]'>
       {ripples.map((ripple) => (
         <div 
         key={ripple.id}
