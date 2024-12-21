@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-
 const Footer: React.FC = ({}) => {
   const [isAtBottom, setIsAtBottom] = useState(false);
 
@@ -28,10 +27,11 @@ const Footer: React.FC = ({}) => {
 
   return (
     <footer className={`bg-black text-white  ${1}`}>
-      <div className="text-center mb-16 mt-36 font-enigma">
+      <div className="text-center mb-14 mt-24 font-enigma">
         <span
-          className={`text-5xl sm:text-7xl md:text-8xl  ${isAtBottom ? "text-[#FF3B00]" : "text-white"
-            }`}
+          className={`text-5xl sm:text-7xl md:text-8xl  ${
+            isAtBottom ? "text-[#FF3B00]" : "text-white"
+          }`}
         >
           CODECHEF
         </span>
@@ -45,18 +45,30 @@ const Footer: React.FC = ({}) => {
         </p>
         <div className="sm:w-auto w-full grid item-center grid-row-3 sm:border-l-2 border-white grid-container sm:h-full">
           <div className="grid-item grid grid-cols-2 w-full h-[50px]">
-            <FooterButton label={"HOME"} redirect={"/"} />
-            <FooterButton label={"PROJECTS"} redirect={"/projects"} />
+            <FooterButton newTab={false} label={"HOME"} redirect={"/"} />
+            <FooterButton
+              newTab={false}
+              label={"PROJECTS"}
+              redirect={"/projects"}
+            />
           </div>
 
           <div className="grid-item grid grid-cols-2  w-full  h-[50px]">
-            <FooterButton label={"BOARD"} redirect={"/board"} />
-            <FooterButton label={"DEVSOC"} redirect={"https://devsoc.codechefvit.com/"} />
+            <FooterButton newTab={false} label={"BOARD"} redirect={"/board"} />
+            <FooterButton
+              newTab={true}
+              label={"DEVSOC"}
+              redirect={"https://devsoc.codechefvit.com/"}
+            />
           </div>
 
           <div className="grid-item grid grid-cols-2   w-full  h-[50px]">
-            <FooterButton label={"EVENTS"} redirect={"/events"} />
-            <FooterButton label={"BLOG"} redirect={"/blog"} />
+            <FooterButton
+              newTab={false}
+              label={"EVENTS"}
+              redirect={"/events"}
+            />
+            <FooterButton newTab={false} label={"BLOG"} redirect={"/blog"} />
           </div>
         </div>
       </div>
@@ -90,10 +102,11 @@ const Footer: React.FC = ({}) => {
             icon="./../assets/socialmediaicons/linkedin.svg"
             altText="LinkedIn"
           />
-          <SocialIcon 
-          href="https://github.com/CodeChefVIT" 
-          icon="./../assets/socialmediaicons/github.svg" 
-          altText="Discord" />
+          <SocialIcon
+            href="https://github.com/CodeChefVIT"
+            icon="./../assets/socialmediaicons/github.svg"
+            altText="Discord"
+          />
         </div>
       </div>
     </footer>
@@ -105,21 +118,38 @@ export default Footer;
 const FooterButton = ({
   label,
   redirect,
+  newTab,
 }: {
   label: string;
   redirect: string;
+  newTab: boolean;
 }) => {
   return (
-    <Link href={redirect}>
-      <div className="h-full relative">
-        <div className="absolute w-full bg-white rounded transition hex4 p-2 sm:p-4">
-          p
-        </div>
-        <div className="absolute w-full right-[5px] top-[-5px] bg-gray-800 text-white p-2 py-[11px] sm:p-4 text-center rounded hover:bg-[#FF3B00] transition hex4 text-xs sm:text-base">
-          {label}
-        </div>
-      </div>
-    </Link>
+    <>
+      {newTab ? (
+        <a href={redirect} target="_blank" rel="noopener noreferrer">
+          <div className="h-full relative">
+            <div className="absolute w-full bg-white rounded transition hex4 p-2 sm:p-4">
+              p
+            </div>
+            <div className="absolute w-full right-[5px] top-[-5px] bg-gray-800 text-white p-2 py-[11px] sm:p-4 text-center rounded hover:bg-[#FF3B00] transition hex4 text-xs sm:text-base">
+              {label}
+            </div>
+          </div>
+        </a>
+      ) : (
+        <Link href={redirect}>
+          <div className="h-full relative">
+            <div className="absolute w-full bg-white rounded transition hex4 p-2 sm:p-4">
+              p
+            </div>
+            <div className="absolute w-full right-[5px] top-[-5px] bg-gray-800 text-white p-2 py-[11px] sm:p-4 text-center rounded hover:bg-[#FF3B00] transition hex4 text-xs sm:text-base">
+              {label}
+            </div>
+          </div>
+        </Link>
+      )}
+    </>
   );
 };
 const SocialIcon = ({
@@ -153,6 +183,3 @@ const SocialIcon = ({
     </a>
   );
 };
-
-
-

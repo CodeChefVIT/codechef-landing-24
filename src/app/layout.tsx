@@ -62,7 +62,6 @@ export default function RootLayout({
           className={`${inter.className} overflow-x-hidden w-screen  bg-black overflow-y-auto  mx-auto`}
         >
           {children}
-          
 
           {!isLoaderActive && pathname !== "/" && <Footer />}
           {!isLoaderActive && <Navbar />}

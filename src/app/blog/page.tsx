@@ -78,7 +78,7 @@ export default function Blog() {
   }
 
   return (
-    <div className="bg-black text-white px-6 py-10 mt-8">
+    <div className="bg-black text-white px-6  mt-8">
       <h1 className="text-white font-semibold font-enigma text-4xl text-center md:text-5xl lg:text-[128px] pt-5">
         BLOGS
       </h1>
@@ -97,7 +97,7 @@ export default function Blog() {
         <div className="flex justify-center items-center space-x-4 mt-6 font-enigma">
           <button
             onClick={() => handlePageChange(page - 1)}
-            className={`w-34 px-4 py-2 bg-slate-50 rounded text-black opacity-75 ${!hasPreviousPage ? "cursor-not-allowed opacity-50" : ""}`}
+            className={`w-36 px-4 py-2 bg-slate-50 rounded text-black hover:bg-[#FF3B00] hover:text-white opacity-75 ${!hasPreviousPage ? "cursor-not-allowed opacity-50" : ""}`}
             disabled={!hasPreviousPage}
             aria-label="Previous Page"
           >
@@ -105,7 +105,7 @@ export default function Blog() {
           </button>
           <button
             onClick={() => handlePageChange(page + 1)}
-            className={`w-32 px-4 py-2 bg-slate-50 rounded text-black opacity-75 ${!hasNextPage ? "cursor-not-allowed opacity-50" : ""}`}
+            className={`w-36 px-4 py-2 bg-slate-50 rounded text-black hover:bg-[#FF3B00] hover:text-white opacity-75 ${!hasNextPage ? "cursor-not-allowed opacity-50" : ""}`}
             disabled={!hasNextPage}
             aria-label="Next Page"
           >
@@ -113,6 +113,6 @@ export default function Blog() {
           </button>
         </div>
       </div>
-    </div>
+    </div >
   );
 }

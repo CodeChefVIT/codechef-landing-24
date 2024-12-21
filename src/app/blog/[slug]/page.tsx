@@ -1,5 +1,5 @@
 'use client';
-import AlsoRead from "@/components/alsoread";
+import AlsoRead from "@/components/AlsoRead";
 import Spinner from "@/components/ui/Spinner";
 import "@/styles/globals.css";
 import { ChevronLeft, MoveRight } from 'lucide-react';
@@ -79,7 +79,7 @@ export default function BlogPostPage({ params }: BlogPostProps) {
     if (loading) {
         return (
             <div className="flex justify-center items-center min-h-screen">
-                <Spinner />
+                <Spinner color="#FF3B00" />
             </div>
         );
     }
@@ -94,7 +94,7 @@ export default function BlogPostPage({ params }: BlogPostProps) {
                 <hr className="border-1 border-white max-width margin:auto" />
                 <div className="flex items-center gap-1 pt-2">
                     <Link href="/blog">
-                        <ChevronLeft className="text-red-600 h-10 w-10 sm:h-12 sm:w-12 md:h-12 md:w-12 lg:h-14 lg:w-14 xl:h-16 xl:w-16 2xl:h-18 2xl:w-18" />
+                        <ChevronLeft className="text-[#FF3B00] h-10 w-10 sm:h-12 sm:w-12 md:h-12 md:w-12 lg:h-14 lg:w-14 xl:h-16 xl:w-16 2xl:h-18 2xl:w-18" />
                     </Link>
                     <h1 className="text-white font-semibold font-enigma text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
                         BLOGS
@@ -117,7 +117,7 @@ export default function BlogPostPage({ params }: BlogPostProps) {
                 <h1 className="font-semibold text-2xl sm:text-3xl lg:text-4xl">
                     ALSO
                 </h1>
-                <h1 className="text-red-500 font-semibold text-2xl sm:text-3xl lg:text-4xl">
+                <h1 className="text-[#FF3B00] font-semibold text-2xl sm:text-3xl lg:text-4xl">
                     READ
                 </h1>
                 <MoveRight className="h-6 w-6 sm:h-8 sm:w-8 lg:h-10 lg:w-10" />

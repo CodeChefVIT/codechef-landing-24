@@ -50,7 +50,7 @@ const Component1 = () => {
     []
   );
 
-  const svgHeight = 2250;
+  const svgHeight = 2200;
   const cardGap = svgHeight / (cards.length + 1);
   const svgPath = useMemo(() => {
     const path = [];
@@ -96,9 +96,9 @@ const Component1 = () => {
   }, [scrollYProgress, progressX, progressY, strokeDashoffset]);
 
   return (
-    <div className="bg-black min-h-screen w-screen ">
+    <div className="bg-black min-h-screen w-screen">
       {/* Header Section */}
-      <div className="relative h-3/4 w-5/6 mx-auto mt-12">
+      <div className="relative h-3/4 max-w-screen-xl mx-auto mt-12">
         <Image
           src={headImage}
           alt="Header Image"
@@ -113,11 +113,11 @@ const Component1 = () => {
           </h1>
         </div>
       </div>
-
+  
       {/* SVG Section */}
-      <div className="relative hidden lg:block">
+      <div className="relative hidden lg:block max-w-screen-xl mx-auto">
         <svg
-          className="absolute left-1/2 transform -translate-x-1/2 w-full h-[2300px] z-0"
+          className="absolute left-1/2 transform -translate-x-1/2 w-full h-[2200px] z-0"
           viewBox={`0 0 800 ${svgHeight}`}
           preserveAspectRatio="xMidYMid meet"
         >
@@ -147,9 +147,9 @@ const Component1 = () => {
           />
         </svg>
       </div>
-
+  
       {/* Content Section */}
-      <div className="flex flex-col gap-12 items-center justify-center font-Space_Grotesk text-center">
+      <div className="flex flex-col gap-6 items-center justify-center font-Space_Grotesk text-center w-full mx-auto">
         {cards.map((card, index) => (
           <Card
             key={index}
@@ -163,6 +163,7 @@ const Component1 = () => {
       </div>
     </div>
   );
+  
 };
 
 export default Component1;

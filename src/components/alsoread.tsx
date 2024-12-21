@@ -25,11 +25,11 @@ const AlsoRead: React.FC<AlsoRead> = ({ title, image, slug }) => {
                     />
                 </div>
                 <h2 className="font-semibold text-black text-[18px] text-center px-2">{title}</h2>
-                <div className="flex flex-row items-center gap-2 hover:text-red-600 absolute bottom-4 right-4 group">
-                    <p className="text-black font-bold group-hover:text-red-600 text-sm md:text-base">
+                <div className="flex flex-row items-center gap-2 hover:text-[#FF3B00] absolute bottom-4 right-4 group">
+                    <p className="text-black font-bold group-hover:text-[#FF3B00] text-sm md:text-base">
                         Read More
                     </p>
-                    <MoveRight className="h-6 w-6 group-hover:text-red-600 md:h-8 md:w-8" />
+                    <MoveRight className="h-6 w-6 group-hover:text-[#FF3B00] md:h-8 md:w-8" />
                 </div>
             </Link>
         </div>
