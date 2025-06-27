@@ -66,6 +66,11 @@ const slugData: Record<(typeof allowedSlugs)[number], {
   ],
   'ffcs-inator': [
     {
+      name: 'Abhinav Ganeshan',
+      url: 'https://www.linkedin.com/in/abhinav-gk/',
+      domain: 'Developer',
+    },
+    {
       name: 'Abhinav Pant',
       url: 'https://www.linkedin.com/in/abhinav-pant',
       domain: 'Developer',
@@ -86,6 +91,11 @@ const slugData: Record<(typeof allowedSlugs)[number], {
       domain: 'Product Design, Engineering, Development and Marketing',
     },
     {
+      name: 'Karan Dugar',
+      url: 'https://www.linkedin.com/in/karan-dugar-680b81237/',
+      domain: 'Developer',
+    },
+    {
       name: 'Kuriak Tom Jacob',
       url: 'https://www.linkedin.com/in/kuriak-tom-jacob-12298228a/',
       domain: 'Design',
@@ -94,6 +104,11 @@ const slugData: Record<(typeof allowedSlugs)[number], {
       name: 'Mansi Sharma',
       url: 'https://www.linkedin.com/in/mansi-sharma9218/',
       domain: 'Design',
+    },
+    {
+      name: 'Nishant Gupta',
+      url: 'https://www.linkedin.com/in/nishant-gupta-12913221b/',
+      domain: 'Developer',
     },
     {
       name: 'Rohith Jayaraj Nambiar',
