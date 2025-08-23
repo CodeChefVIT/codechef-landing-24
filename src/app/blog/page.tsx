@@ -99,7 +99,7 @@ export default function Blog() {
               key={post.slug}
               title={post.title}
               description={truncateContent(post.content.html, 20)}
-              image={post.coverImage.url}
+              image={post.coverImage?.url || ""}
               slug={post.slug}
             />
           ))}

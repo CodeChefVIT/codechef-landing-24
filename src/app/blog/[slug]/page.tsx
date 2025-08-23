@@ -128,7 +128,7 @@ export default function BlogPostPage({ params }: BlogPostProps) {
                         <AlsoRead
                             key={relatedPost.slug}
                             title={relatedPost.title}
-                            image={relatedPost.coverImage.url}
+                            image={relatedPost.coverImage?.url || ""}
                             slug={relatedPost.slug}
                         />
                     ))
