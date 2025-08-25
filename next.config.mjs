@@ -32,7 +32,7 @@ const nextConfig = {
     return [
       {
         source: "/api/sheets",
-        destination: `/${process.env.SHEETS_API_URL}`,
+        destination: `${process.env.SHEETS_API_URL}`,
       },
     ];
   },
