@@ -1,4 +1,6 @@
 "use client";
+export const runtime = "edge";
+
 import BlogCard from "@/components/BlogCard";
 import Ripple from "@/components/Ripple";
 import RippleStatic from "@/components/RipplestStatic";
@@ -86,7 +88,7 @@ export default function Blog() {
 
   return (
     <div className="bg-transparent text-white px-6  mt-8">
-      <Ripple/>
+      <Ripple />
       <RippleStatic duration={7000} />
 
       <h1 className="text-white font-semibold font-enigma text-4xl text-center md:text-5xl lg:text-[128px] pt-5">

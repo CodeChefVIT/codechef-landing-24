@@ -1,5 +1,6 @@
-import axios from 'axios';
-import { NextRequest, NextResponse } from 'next/server';
+import axios from "axios";
+import { NextRequest, NextResponse } from "next/server";
+export const runtime = "edge";
 
 export async function GET(
   req: NextRequest,
@@ -9,14 +10,14 @@ export async function GET(
 
   if (!slug) {
     return NextResponse.json(
-      { error: 'Invalid or missing slug' },
+      { error: "Invalid or missing slug" },
       { status: 400 }
     );
   }
 
   try {
     const response = await axios.post(
-      'https://gql.hashnode.com',
+      "https://gql.hashnode.com",
       {
         query: `
           query PostBySlug {
@@ -54,17 +55,14 @@ export async function GET(
     const post = response.data.data.publication?.post;
 
     if (!post) {
-      return NextResponse.json(
-        { error: 'Post not found' },
-        { status: 404 }
-      );
+      return NextResponse.json({ error: "Post not found" }, { status: 404 });
     }
 
     return NextResponse.json(post);
   } catch (error) {
-    console.error('Error fetching post:', error);
+    console.error("Error fetching post:", error);
     return NextResponse.json(
-      { error: 'Internal Server Error' },
+      { error: "Internal Server Error" },
       { status: 500 }
     );
   }
