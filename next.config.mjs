@@ -26,6 +26,13 @@ const nextConfig = {
         destination: "https://www.youtube.com/watch?v=Ga0KBHmSLns",
         permanent: false,
       },
+      {
+        source: "/brochure",
+
+        destination: "/Brochure.pdf",
+
+        permanent: false,
+      },
     ];
   },
   async rewrites() {
