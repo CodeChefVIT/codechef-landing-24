@@ -33,6 +33,13 @@ const nextConfig = {
 
         permanent: false,
       },
+      {
+        source: "/compipdf",
+
+        destination: "/CompiResources.pdf",
+
+        permanent: false,
+      },
     ];
   },
   async rewrites() {
