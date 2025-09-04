@@ -34,6 +34,7 @@ const nextConfig = {
         permanent: false,
       },
       {
+  
         source: "/cookoff",
         destination: "https://gravitas.vit.ac.in/events/bdfcebea-c141-4a61-ac73-61dec96c08f4",
         permanent: false
@@ -42,7 +43,14 @@ const nextConfig = {
         source: "/clueminati",
         destination: "https://gravitas.vit.ac.in/events/4bb51469-3e67-4275-8f88-fcf56b2e05d4",
         permanent: false
-      }
+      },
+      {
+        source: "/compipdf",
+
+        destination: "/CompiResources.pdf",
+
+        permanent: false,
+      },
     ];
   },
   async rewrites() {
