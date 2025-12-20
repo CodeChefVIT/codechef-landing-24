@@ -144,6 +144,11 @@ const slugData: Record<
       domain: "Frontend",
     },
     {
+      name: "Tarun E",
+      url: "https://www.linkedin.com/in/tarun-e-931493256",
+      domain: "Ideation and Development",
+    },
+    {
       name: "Upayan Mazumder",
       url: "https://www.linkedin.com/in/upayanmazumder",
       domain: "Frontend",
