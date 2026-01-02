@@ -74,7 +74,7 @@ const Footer: React.FC = ({}) => {
       </div>
       <div className="flex flex-col lg:flex-row justify-between items-center border-t border-white py-4">
         <div className="text-gray-400 text-sm lg:text-base ml-10 mb-4 lg:mb-0 font-enigma">
-          © 2025 CODECHEF
+          © 2026 CODECHEF
         </div>
         <div className="flex flex-wrap justify-center mb-12 md:mb-0 gap-6 md:gap-12 md:mr-8">
           <SocialIcon
