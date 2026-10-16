@@ -90,7 +90,7 @@ export default function PromoCyclePage() {
           <div className="mt-8 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="max-w-xl">
               <p className="text-base leading-relaxed text-white/75 sm:text-lg">Choose your domains, take on the tasks, and submit your work.</p>
-              <p className="mt-4 text-sm text-white/60">Deadline <span className="ml-2 text-[#FF3B00]">16 October 2026 · 9:00 PM IST</span></p>
+              <p className="mt-4 text-sm text-white/60">Deadline <span className="ml-2 text-[#FF3B00]">17 October 2026 · 4:00 PM IST</span></p>
             </div>
             <button type="button" onClick={openTasks} className={`${buttonStyle} w-full shrink-0 text-[#FF3B00] hover:bg-[#FF3B00] hover:text-black md:w-auto`}>
               <FileText size={18} aria-hidden="true" /> View task sheet <ArrowUpRight size={18} aria-hidden="true" />
